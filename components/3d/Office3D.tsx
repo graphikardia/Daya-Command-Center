@@ -269,7 +269,7 @@ export default function Office3D() {
           <ContactShadows position={[0, 0, 0]} opacity={0.6} scale={100} blur={2} far={10} color="#000" />
         </Suspense>
 
-        <EffectComposer disableNormalPass>
+        <EffectComposer enableNormalPass={false}>
           <Bloom luminanceThreshold={1} mipmapBlur intensity={1.2} />
           <Vignette eskil={false} offset={0.1} darkness={1.1} />
         </EffectComposer>
