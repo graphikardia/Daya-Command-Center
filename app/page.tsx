@@ -254,7 +254,7 @@ export default function CommandCenter() {
                              <div className="p-6 flex-1 flex flex-col gap-5">
                                <p className="text-[13px] text-slate-300 leading-relaxed font-medium line-clamp-6">{String(post.content_preview || post.content)}</p>
                                
-                               {post.image_prompt && (
+                               {Boolean(post.image_prompt) && (
                                   <div className="mt-auto p-3 rounded bg-white/[0.03] border border-white/5">
                                     <p className="text-[9px] text-purple-400 font-bold uppercase tracking-widest mb-2 font-mono">Image Generator Prompt</p>
                                     <p className="text-[11px] text-slate-400 italic line-clamp-2 leading-relaxed">&ldquo;{String(post.image_prompt)}&rdquo;</p>
