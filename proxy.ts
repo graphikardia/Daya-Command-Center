@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const isLoginPage = request.nextUrl.pathname.startsWith('/login');
   
   // Allow API routes or public assets if needed, but we want strict lockdown
