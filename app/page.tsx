@@ -248,7 +248,7 @@ export default function CommandCenter() {
                                   <span className="text-[9px] font-bold text-slate-500 uppercase">{post.content_type as string}</span>
                                </div>
                                <span className={`text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded ${post.status === 'executed' ? 'bg-emerald-500/10 text-emerald-400' : 'bg-amber-500/10 text-amber-400'}`}>
-                                 {post.status}
+                                 {String(post.status)}
                                </span>
                              </div>
                              <div className="p-6 flex-1 flex flex-col gap-5">
