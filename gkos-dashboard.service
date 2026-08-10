@@ -1,0 +1,30 @@
+[Unit]
+Description=GKOS Dashboard — Graphikardia 3D Command Center (Next.js)
+Documentation=https://graphikardia.com
+After=network-online.target gkos-brain.service
+Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=gokul
+Group=gokul
+WorkingDirectory=/home/gokul/gkos
+
+ExecStartPre=/usr/bin/npm install --silent
+ExecStart=/usr/bin/npm run dev
+
+Environment=PORT=3001
+Environment=NODE_ENV=development
+
+Restart=always
+RestartSec=10
+TimeoutStartSec=90
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=gkos-dashboard
+
+[Install]
+WantedBy=multi-user.target

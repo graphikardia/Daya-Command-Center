@@ -1,0 +1,45 @@
+[Unit]
+Description=GKOS Brain — Graphikardia AI Automation Engine
+Documentation=https://graphikardia.com
+After=network-online.target
+Wants=network-online.target
+# Restart even if the network is down — the brain queues work offline
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=gokul
+Group=gokul
+WorkingDirectory=/home/gokul/gkos/gkos_brain
+
+# Load the virtual-env Python if it exists, fall back to system
+ExecStartPre=/bin/bash -c '\
+  if [ -f /home/gokul/ai-system/.venv/bin/pip ]; then \
+    /home/gokul/ai-system/.venv/bin/pip install -q -r /home/gokul/gkos/gkos_brain/requirements.txt; \
+  else \
+    pip3 install -q -r /home/gokul/gkos/gkos_brain/requirements.txt; \
+  fi'
+
+ExecStart=/bin/bash -c '\
+  PYTHON=/home/gokul/ai-system/.venv/bin/python; \
+  [ -f "$PYTHON" ] || PYTHON=/usr/bin/python3; \
+  exec "$PYTHON" /home/gokul/gkos/gkos_brain/main.py'
+
+# Environment
+Environment=OPENROUTER_API_KEY=aa43b2aca27846cb41ce381f73398ccf
+Environment=PYTHONPATH=/home/gokul/ai-system
+EnvironmentFile=-/home/gokul/ai-system/.env
+
+# Reliability
+Restart=always
+RestartSec=10
+TimeoutStartSec=60
+
+# Logging — view with: journalctl -u gkos-brain -f
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=gkos-brain
+
+[Install]
+WantedBy=multi-user.target

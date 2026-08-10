@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Legacy Monorepo Isolation
+/frontend/
+/gkos_brain/
+/career-ops/
+/deepa/
+/memory/
+/logs/
+/tmp/
+/phone_agent/
+*.log

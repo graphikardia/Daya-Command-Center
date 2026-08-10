@@ -1,0 +1,292 @@
+[
+  {
+    "id": "T001", "agent": "shiva", "agentColor": "#8b5cf6",
+    "title": "Daily Agency Briefing & Task Routing",
+    "description": "Generate morning briefing: summarize all agent activity, flag blockers, re-prioritize the day's task queue across all 12 agents.",
+    "status": "in-progress", "priority": "critical",
+    "schedule": "daily-09:00",
+    "targets": ["all-agents"],
+    "lastRun": "09:00 today", "nextRun": "09:00 tomorrow",
+    "category": "orchestration"
+  },
+  {
+    "id": "T002", "agent": "shiva", "agentColor": "#8b5cf6",
+    "title": "Weekly Performance Report",
+    "description": "Compile a cross-platform performance report: LinkedIn reach, Instagram engagement, website traffic, Ad ROAS, client pipeline status.",
+    "status": "backlog", "priority": "high",
+    "schedule": "weekly-monday-08:00",
+    "targets": ["graphikardia.com", "linkedin.com/company/graphikardia"],
+    "lastRun": "last monday", "nextRun": "next monday",
+    "category": "reporting"
+  },
+  {
+    "id": "T003", "agent": "narada", "agentColor": "#10b981",
+    "title": "LinkedIn Personal Post — Geetha Gokula",
+    "description": "Generate 3 thought-leadership posts per week to linkedin.com/in/geethagokula. Topics: creative leadership, design psychology, startup ecosystem.",
+    "status": "in-progress", "priority": "critical",
+    "schedule": "mwf-10:00",
+    "targets": ["linkedin.com/in/geethagokula"],
+    "lastRun": "10:00 today", "nextRun": "10:00 tomorrow",
+    "category": "social"
+  },
+  {
+    "id": "T004", "agent": "narada", "agentColor": "#10b981",
+    "title": "LinkedIn Company Post — Graphikardia",
+    "description": "Publish 3x per week to linkedin.com/company/graphikardia. Focus: B2B AI marketing, case studies, and design efficiency ROI.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "mwf-11:00",
+    "targets": ["linkedin.com/company/graphikardia"],
+    "lastRun": "11:00 today", "nextRun": "tomorrow 11:00",
+    "category": "social"
+  },
+  {
+    "id": "T005", "agent": "narada", "agentColor": "#10b981",
+    "title": "Instagram Caption — @graphikardia",
+    "description": "Write and schedule 3 post captions per week for instagram.com/graphikardia. Stunning typography, design breakdowns, and UI/UX tips.",
+    "status": "review", "priority": "high",
+    "schedule": "mwf-12:00",
+    "targets": ["instagram.com/graphikardia"],
+    "lastRun": "12:00 today", "nextRun": "12:00 tomorrow",
+    "category": "social"
+  },
+  {
+    "id": "T006", "agent": "narada", "agentColor": "#10b981",
+    "title": "Instagram Caption — @mr.gk_gokul (Personal)",
+    "description": "Write 3 captions per week for personal brand on instagram.com/mr.gk_gokul. Themes: founder life, AI coding sessions, mindset.",
+    "status": "backlog", "priority": "medium",
+    "schedule": "mwf-13:00",
+    "targets": ["instagram.com/mr.gk_gokul"],
+    "lastRun": "yesterday", "nextRun": "today 13:00",
+    "category": "social"
+  },
+  {
+    "id": "T007", "agent": "arjun", "agentColor": "#3b82f6",
+    "title": "LinkedIn Outreach — Personal Account",
+    "description": "Send 30 targeted connection requests per day from geethagokula LinkedIn. ICP: Marketing managers, startup founders, creative directors in South India.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "daily-14:00",
+    "targets": ["linkedin.com/in/geethagokula"],
+    "lastRun": "14:00 today", "nextRun": "14:00 tomorrow",
+    "category": "growth"
+  },
+  {
+    "id": "T008", "agent": "arjun", "agentColor": "#3b82f6",
+    "title": "LinkedIn DM Follow-Up Sequences",
+    "description": "Send personalized follow-up DMs to pending connections. 3-touch sequence: Introduction → Value → CTA.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "daily-15:00",
+    "targets": ["linkedin.com/in/geethagokula"],
+    "lastRun": "15:00 today", "nextRun": "15:00 tomorrow",
+    "category": "growth"
+  },
+  {
+    "id": "T009", "agent": "arjun", "agentColor": "#3b82f6",
+    "title": "Client Prospecting List — Graphikardia",
+    "description": "Build weekly list of 50 warm prospects for Graphikardia services. Research company LinkedIn pages, identify decision makers, score leads.",
+    "status": "backlog", "priority": "high",
+    "schedule": "weekly-wednesday",
+    "targets": ["linkedin.com/company/graphikardia"],
+    "lastRun": "last week", "nextRun": "wednesday",
+    "category": "growth"
+  },
+  {
+    "id": "T010", "agent": "agni", "agentColor": "#dc2626",
+    "title": "Meta Ads Performance Monitoring",
+    "description": "Daily audit of Meta ad campaigns for Graphikardia. Track CTR, CPL, ROAS. Auto-flag underperforming ad sets and suggest bid adjustments.",
+    "status": "in-progress", "priority": "critical",
+    "schedule": "daily-08:30",
+    "targets": ["graphikardia.com"],
+    "lastRun": "08:30 today", "nextRun": "08:30 tomorrow",
+    "category": "ads"
+  },
+  {
+    "id": "T011", "agent": "agni", "agentColor": "#dc2626",
+    "title": "Weekly ROAS & Budget Report",
+    "description": "Compile Meta + Google ads weekly ROAS report. Include audience fatigue analysis, creative performance ranking, budget reallocation recommendations.",
+    "status": "backlog", "priority": "high",
+    "schedule": "weekly-friday-17:00",
+    "targets": ["graphikardia.com"],
+    "lastRun": "last friday", "nextRun": "this friday",
+    "category": "reporting"
+  },
+  {
+    "id": "T012", "agent": "saraswati", "agentColor": "#ec4899",
+    "title": "Instagram Visual Brief — @graphikardia",
+    "description": "Generate design briefs for 5 Instagram posts per week. Include color palette, typography, layout direction, and brand guideline compliance check.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "weekly-tuesday-10:00",
+    "targets": ["instagram.com/graphikardia"],
+    "lastRun": "this tuesday", "nextRun": "next tuesday",
+    "category": "design"
+  },
+  {
+    "id": "T013", "agent": "saraswati", "agentColor": "#ec4899",
+    "title": "Brand Consistency Audit — All Platforms",
+    "description": "Monthly sweep across website, LinkedIn, Instagram for brand consistency. Flag logo misuse, font inconsistencies, color deviations.",
+    "status": "backlog", "priority": "medium",
+    "schedule": "monthly-1st",
+    "targets": ["graphikardia.com", "gokula.graphikardia.com", "instagram.com/graphikardia"],
+    "lastRun": "1st may", "nextRun": "1st june",
+    "category": "design"
+  },
+  {
+    "id": "T014", "agent": "vyasa", "agentColor": "#14b8a6",
+    "title": "Blog Post — graphikardia.com",
+    "description": "Write 1 SEO-optimized blog post per week for graphikardia.com. Topics: AI in creative agencies, social media strategy, branding tips for startups.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "weekly-thursday-11:00",
+    "targets": ["graphikardia.com"],
+    "lastRun": "last thursday", "nextRun": "this thursday",
+    "category": "content"
+  },
+  {
+    "id": "T015", "agent": "vyasa", "agentColor": "#14b8a6",
+    "title": "Q3 Content Calendar — All Platforms",
+    "description": "Build full 90-day content calendar for Graphikardia and Geetha Gokula personal brand. Map topics, formats, platforms, and posting cadence.",
+    "status": "review", "priority": "critical",
+    "schedule": "quarterly",
+    "targets": ["linkedin.com/in/geethagokula", "linkedin.com/company/graphikardia", "instagram.com/graphikardia", "instagram.com/mr.gk_gokul"],
+    "lastRun": "this week", "nextRun": "q4",
+    "category": "strategy"
+  },
+  {
+    "id": "T016", "agent": "vyasa", "agentColor": "#14b8a6",
+    "title": "LinkedIn Article — Geetha Gokula",
+    "description": "Write 1 long-form LinkedIn article per month for geethagokula profile. Deep-dive topics: agency building, AI automation, creative leadership.",
+    "status": "backlog", "priority": "medium",
+    "schedule": "monthly-15th",
+    "targets": ["linkedin.com/in/geethagokula"],
+    "lastRun": "15th april", "nextRun": "15th june",
+    "category": "content"
+  },
+  {
+    "id": "T017", "agent": "vishvakarma", "agentColor": "#06b6d4",
+    "title": "SEO Technical Audit — graphikardia.com",
+    "description": "Weekly automated SEO scan: Core Web Vitals, broken links, missing meta tags, schema markup, page speed scores.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "weekly-monday-07:00",
+    "targets": ["graphikardia.com"],
+    "lastRun": "this monday", "nextRun": "next monday",
+    "category": "seo"
+  },
+  {
+    "id": "T018", "agent": "vishvakarma", "agentColor": "#06b6d4",
+    "title": "SEO Audit — gokula.graphikardia.com",
+    "description": "Weekly SEO scan for personal portfolio site. Check title tags, OG metadata, image alt texts, mobile responsiveness, loading speed.",
+    "status": "in-progress", "priority": "medium",
+    "schedule": "weekly-wednesday-07:00",
+    "targets": ["gokula.graphikardia.com"],
+    "lastRun": "this wednesday", "nextRun": "next wednesday",
+    "category": "seo"
+  },
+  {
+    "id": "T019", "agent": "krishna", "agentColor": "#c084fc",
+    "title": "Instagram Reel Script — @graphikardia",
+    "description": "Write 3 Reel scripts per week for Graphikardia. 30-60 second format. Hook in 3 seconds, value delivery, strong CTA. Deep visual direction.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "mwf-10:00",
+    "targets": ["instagram.com/graphikardia"],
+    "lastRun": "tuesday", "nextRun": "thursday",
+    "category": "video"
+  },
+  {
+    "id": "T020", "agent": "krishna", "agentColor": "#c084fc",
+    "title": "LinkedIn Video Ideas — Geetha Gokula",
+    "description": "Generate LinkedIn video content ideas and scripts for personal brand. Talking-head format, 60-90 seconds. Management, leadership, AI tools angle.",
+    "status": "backlog", "priority": "medium",
+    "schedule": "weekly-friday-10:00",
+    "targets": ["linkedin.com/in/geethagokula"],
+    "lastRun": "last friday", "nextRun": "this friday",
+    "category": "video"
+  },
+  {
+    "id": "T021", "agent": "maya", "agentColor": "#f59e0b",
+    "title": "graphikardia.com — WordPress Health Check",
+    "description": "Weekly WP audit: plugin updates, theme conflicts, database optimization, spam comment cleanup, backup verification.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "weekly-sunday-06:00",
+    "targets": ["graphikardia.com"],
+    "lastRun": "last sunday", "nextRun": "this sunday",
+    "category": "maintenance"
+  },
+  {
+    "id": "T022", "agent": "maya", "agentColor": "#f59e0b",
+    "title": "Blog Publishing — graphikardia.com",
+    "description": "Format and publish Vyasa's approved blog posts to WP. Set correct categories, tags, featured images, SEO metadata via Yoast.",
+    "status": "backlog", "priority": "high",
+    "schedule": "weekly-thursday-12:00",
+    "targets": ["graphikardia.com"],
+    "lastRun": "last thursday", "nextRun": "this thursday",
+    "category": "maintenance"
+  },
+  {
+    "id": "T023", "agent": "chitra", "agentColor": "#d946ef",
+    "title": "Design Asset Exports — Instagram",
+    "description": "Export weekly design asset pack for Instagram: 5 post templates, 2 story templates, 1 reel cover. Follow brand kit.",
+    "status": "backlog", "priority": "medium",
+    "schedule": "weekly-monday-14:00",
+    "targets": ["instagram.com/graphikardia", "instagram.com/mr.gk_gokul"],
+    "lastRun": "last monday", "nextRun": "this monday",
+    "category": "design"
+  },
+  {
+    "id": "T024", "agent": "chitra", "agentColor": "#d946ef",
+    "title": "Portfolio Page Update — gokula.graphikardia.com",
+    "description": "Quarterly design refresh of portfolio page. Update project showcases, add new client work, refresh hero section design.",
+    "status": "backlog", "priority": "medium",
+    "schedule": "quarterly",
+    "targets": ["gokula.graphikardia.com"],
+    "lastRun": "q1", "nextRun": "q3",
+    "category": "design"
+  },
+  {
+    "id": "T025", "agent": "lakshmi", "agentColor": "#eab308",
+    "title": "Client Pipeline Status Report",
+    "description": "Weekly summary of active client deals, pending proposals, invoice status. Flag overdue payments and expiring retainers.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "weekly-monday-09:30",
+    "targets": ["graphikardia.com"],
+    "lastRun": "this monday", "nextRun": "next monday",
+    "category": "accounts"
+  },
+  {
+    "id": "T026", "agent": "lakshmi", "agentColor": "#eab308",
+    "title": "Monthly Revenue Report",
+    "description": "Compile full MRR, project revenue, ad spend, and net profit for Graphikardia. Include client retention rate and deal velocity.",
+    "status": "backlog", "priority": "high",
+    "schedule": "monthly-1st",
+    "targets": ["graphikardia.com"],
+    "lastRun": "1st may", "nextRun": "1st june",
+    "category": "accounts"
+  },
+  {
+    "id": "T027", "agent": "hanuman", "agentColor": "#f97316",
+    "title": "Uptime Monitor — graphikardia.com",
+    "description": "Monitor graphikardia.com every 5 minutes. Alert on downtime, SSL expiry warnings, DNS issues, server response time spikes.",
+    "status": "in-progress", "priority": "critical",
+    "schedule": "every-5-min",
+    "targets": ["graphikardia.com"],
+    "lastRun": "5 mins ago", "nextRun": "in 5 mins",
+    "category": "devops"
+  },
+  {
+    "id": "T028", "agent": "hanuman", "agentColor": "#f97316",
+    "title": "Uptime Monitor — gokula.graphikardia.com",
+    "description": "Monitor personal portfolio subdomain. Check uptime, SSL cert validity, CDN health, page load performance.",
+    "status": "in-progress", "priority": "high",
+    "schedule": "every-10-min",
+    "targets": ["gokula.graphikardia.com"],
+    "lastRun": "10 mins ago", "nextRun": "in 10 mins",
+    "category": "devops"
+  },
+  {
+    "id": "T029", "agent": "hanuman", "agentColor": "#f97316",
+    "title": "Weekly Security Scan",
+    "description": "Run automated security audit on both websites. Check for malware, open redirects, misconfigured headers, outdated dependencies.",
+    "status": "backlog", "priority": "high",
+    "schedule": "weekly-saturday-03:00",
+    "targets": ["graphikardia.com", "gokula.graphikardia.com"],
+    "lastRun": "last saturday", "nextRun": "this saturday",
+    "category": "devops"
+  }
+]
